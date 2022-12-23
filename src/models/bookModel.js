@@ -3,7 +3,7 @@ const ObjectId = mongoose.Schema.Types.ObjectId
 
 const books = new mongoose.Schema({
 
-    title: {
+title: {
         type: String,
         unique: true,
         require: true,
@@ -50,7 +50,8 @@ const books = new mongoose.Schema({
     releasedAt: {
         type:String,
         default:null
-    }
+    },
+    bookCover:String
 
 
 }, { timestamps: true })
